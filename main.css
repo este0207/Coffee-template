@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+        body {
+            background-color: #e2d9c8;
+            margin: 7%;
+        }
+        .head {
+            display: grid;
+            background-image: url(./images/BaristaLatte-Canardcafe.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            padding: 20px;
+            padding-bottom: 10% ;
+            grid-template-columns: 25% 50%;
+        }
+        .head nav {
+            list-style-type: none;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            gap: 13%;
+        }
+        .head nav a {
+            text-decoration: none;
+            color:  rgba(255, 255, 255, 0.60);
+        }
+
+        .head nav a:hover {
+            color: rgba(163, 163, 163, 0.6);
+        }
+        
+        .head nav li {
+            display: inline-block;
+            font-size: 140%;
+            font-family: "Smooch Sans", serif;
+        }
+        .head .text {
+            font-family: "Roboto", serif;
+        }
+        .head h1 {
+            margin-left: 10%;
+        }
+        .head button {
+            padding: 10px;
+            border-radius: 40px;
+            background-color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .text {
+            margin-left: 10%;
+        }
+
+        .pic {
+            display: grid;
+            grid-template-columns: 10% 10% 10% 10%;
+            justify-content: center;
+            margin: 5%;
+            gap: 0px 10%;
+            filter: opacity(50%);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .main {
+            background-color: #f1f0ee;
+            text-align: center;
+            padding: 5%;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .main .coffee {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 25% 25% 25% 25%;
+            gap: 2%;
+            box-shadow: 3px;
+            margin: 10px;
+            
+        }
+
+        .main .coffee .case {
+            display: flex;
+            flex-direction: column;
+            background-color: #efeae6;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        .main .coffee .case .price {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            gap: 10px;
+        }
+
+        .main .coffee .case  p {
+            display: flex;
+            margin: 10px;
+        }
+
+        .main .coffee .case  h3 {
+            display: flex;
+            margin: 10px;
+        }
+
+        .main .coffee .case img {
+            aspect-ratio: 1/1;
+        }
+
+        .main .coffee .case button {
+            /* display: none; */
+            background-color: black;
+            border-radius: 10px;
+            color: white;
+            font-size: 10px;
+            cursor: pointer;
+        }
+
+        .main .coffee .case button:hover {
+            background-color: rgb(52, 52, 52);
+        }
+
+        .space {
+            background-image: url(./images/banner1.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #e7e1d5;
+            background-position: center;
+            padding: 5%;
+            text-align:center;
+            font-family: "Inter", serif;
+            margin: 0;
+        }
+
+        .space button {
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px;
+            font-family: "Inter", serif;
+            cursor: pointer;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        footer {
+            background-color: #30261c;
+            color: white;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 10% 10% 10% 10% 10% 10%;
+            justify-content: center;
+            gap: 7%;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .comments{
+            text-align: center;
+            background-color: white;
+            margin: 0;
+            font-family: "Inter", serif;
+            padding: 10px;
+        }
+
+        .comments #title {
+            text-align: center;
+            font-family: "Dancing Script", serif;
+        }
+
+        .comments .com p {
+            margin: 0;
+            display: flex;
+        }
+
+        .join {
+            background-image: url(./images/banner2.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 7%;
+            text-align: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .join h2 {
+            margin: 0;
+        }
+
+        .join p {
+            margin-top: 10px;
+            margin-bottom: 3%;
+        }
+
+        .join input {
+            border-radius: 100px;
+            border: none;
+            padding: 10px 50px;
+        }
+
+        .join .mail {
+            display: grid;
+            grid-template-columns: 40% 15%;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .join button {
+            background-color: #30261c;
+            color: rgb(194, 194, 194);
+            border-radius: 100px;
+            border: none;
+            padding: 13px;
+            font-size: 16px;
+        }
+
+        #email-input {
+            padding-left: 30px; /* Ajoute de l'espace pour l'icône */
+            font-size: 16px;
+          }
+        
+        .chest .icon {
+            display: grid;
+            grid-template-columns: 30px 30px 30px 30px;
+            font-size: 20px;
+        }
+        
+        .chest .icon i {
+            cursor: pointer;
+            color: white;
+        }
