@@ -41,9 +41,6 @@
         .head .text {
             font-family: "Roboto", serif;
         }
-        .head h1 {
-            margin-left: 10%;
-        }
         .head button {
             padding: 10px;
             border-radius: 40px;
@@ -53,10 +50,6 @@
             font-size: 15px;
             border: none;
             cursor: pointer;
-        }
-
-        .text {
-            margin-left: 10%;
         }
 
         .pic {
@@ -152,6 +145,10 @@
             cursor: pointer;
         }
 
+        .dessert h2 {
+            margin-top: 100px;
+        }
+
         img {
             width: 100%;
         }
@@ -226,6 +223,7 @@
             font-size: 16px;
         }
 
+
         #email-input {
             padding-left: 30px; /* Ajoute de l'espace pour l'icône */
             font-size: 16px;
@@ -240,4 +238,147 @@
         .chest .icon i {
             cursor: pointer;
             color: white;
+        }
+
+        /* Ajout du style pour le bouton burger */
+        .burger {
+            display: none;
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            right: 10%;
+            top: 30px;
+            font-size: 2rem;
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+        }
+
+        .burger-menu {
+            display: none;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .burger-menu a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 1.2rem;
+        }
+
+        .burger-menu a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        @media (max-width: 1200px) {
+            .head {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .head nav {
+                display: none;
+            }
+
+            .main .coffee {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .pic {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                width: 100%;
+                justify-content: center;
+            }
+
+            footer {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            footer .icon {
+                gap: 10px;
+            }
+
+            .join .mail {
+                grid-template-columns: 1fr;
+            }
+
+            .head nav {
+                display: none;
+            }
+
+            .burger {
+                display: block;
+                background-color: transparent;
+                top: 11%;
+            }
+
+            .burger-menu.active {
+                display: block;
+                margin-top: 6%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                margin: 5%;
+            }
+
+            .head {
+                padding-bottom: 20%;
+            }
+
+            .main .coffee {
+                grid-template-columns: 1fr;
+            }
+
+            .pic {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                max-width: 100%;
+
+            }
+
+            footer {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 20px;
+            }
+
+            footer .icon {
+                grid-template-columns: 1fr;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .join {
+                padding: 10%;
+            }
+
+            .join .mail {
+                grid-template-columns: 1fr;
+            }
+
+            .space {
+                padding: 10%;
+                padding-top: 30%;
+
+            }
+
+            .head nav {
+                display: none;
+            }
+
+            .burger {
+                display: block;
+                top: 5%;
+            }
+
+            .burger-menu.active {
+                display: block;
+            }
         }

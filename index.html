@@ -8,8 +8,17 @@
     <title>Coffe</title>
 </head>
 <body>
+    <button class="burger">X</button>
     <div class="head">
         <h1>Coffee</h1>
+        <div class="burger-menu">
+            <a href="#"><li>HOME</li></a>
+            <a href="#"><li>COFFEE</li></a>
+            <a href="#"><li>BAKERY</li></a>
+            <a href="#"><li>SHOP</li></a>
+            <a href="#"><li>ABOUT</li></a>
+            <a href="#"><li>LOGIN</li></a>
+        </div>
         <nav>
             <a href="#"><li>HOME</li></a>
             <a href="#"><li>COFFEE</li></a>
@@ -78,7 +87,7 @@
             </div>
         </div>
         <br>
-        <h2>OUR SPECIAL DESSERT</h2>
+        <h2 style="margin-top: 30%;">OUR SPECIAL DESSERT</h2>
         <div class="coffee">
             <div class="case">
                 <img src="./images/choco.jpg" alt="">
@@ -164,7 +173,7 @@
             <p>Jobs</p>
         </div>
         <div class="chest">
-            <p><strong>PRIVACY</strong></p>
+            <p><strong>SOCIALS</strong></p>
             <div class="icon">
                 <a href=""><i class="fa-brands fa-twitter"></i></a>
                 <a href=""><i class="fa-brands fa-facebook-f"></i></a>
@@ -175,4 +184,13 @@
     </footer>
     
 </body>
+<script>
+    const burger = document.querySelector('.burger');
+    const burgerMenu = document.querySelector('.burger-menu');
+
+    burger.addEventListener('click', () => {
+        burgerMenu.classList.toggle('active');
+        burger.textContent = burgerMenu.classList.contains('active') ? '-' : 'X';
+    });
+</script>
 </html>
