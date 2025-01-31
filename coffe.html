@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>Coffe</title>
+    <title>Document</title>
 </head>
 <body>
-    <button class="burger"><i class="fa-solid fa-bars"></i></button>
+    <button class="burger">x</button>
     <div class="head">
         <h1>Coffee</h1>
         <div class="burger-menu">
@@ -20,31 +19,19 @@
             <a href="./login.html"><li>LOGIN</li></a>
         </div>
         <nav>
-            <a href="./index.html"><li>HOME</li></a>
-            <a href="./coffe.html"><li>COFFEE</li></a>
-            <a href="https://www.cornulatelier.fr/"><li>BAKERY</li></a>
-            <a href="https://www.easytoys.fr/"><li>SHOP</li></a>
+            <a href="#"><li>HOME</li></a>
+            <a href="#"><li>COFFEE</li></a>
+            <a href="#"><li>BAKERY</li></a>
+            <a href="#"><li>SHOP</li></a>
             <a href="#"><li>ABOUT</li></a>
-            <a href="./login.html"><li>LOGIN</li></a>
+            <a href="#"><li>LOGIN</li></a>
+            <!-- <img src="./images/search.png" alt="" > -->
         </nav>
         <div class="text">
-            <p>Welcome!</p>
-            <h3>We serve the richest coffee<br>in the city</h3>
-            <a href="#"><button>Order Now</button></a>
+            <p>Coffee</p>
+            <h3>Here is our coffee selection</h3>
         </div>
-
     </div>
-    <div class="pic">
-        <img src="./images/cup.png" alt="">
-        <img src="./images/ice.png" alt="">
-        <img src="./images/coffee.png" alt="">
-        <img src="./images/cake.png" alt="">
-        <p>Cup Coffee</p>
-        <p>Cold Coffee</p>
-        <p>Hot Coffee</p>
-        <p>DESSERT</p>
-    </div>
-
     <div class="main">
         <H2>OUR SPECIAL COFFEE</H2>
         <div class="coffee">
@@ -126,63 +113,6 @@
             </div>
         </div>
     </div>
-    <div class="space">
-        <h2>Check out our best <br> Coffee betans</h2>
-        <button>Explore our products >></button>
-    </div>
-    <div class="comments">
-        <h2 id="title">Come and join</h2>
-        <h2>OUR HAPPY CUSTOMERS</h2>
-        <div class="com">
-            <script src="https://static.elfsight.com/platform/platform.js" async></script>
-            <div class="elfsight-app-1a8d6984-25a5-497f-aefb-65c2e270d6f0" data-elfsight-app-lazy></div>
-        </div>
-    </div>
-    <div class="join">
-        <h2>Join in and get 15% Off!</h2>
-        <p>subscribe to our newsletters and get 15% off discount code</p>
-        <div class="mail">
-            <input type="mail" id="email-input" placeholder="Email address">
-            <button>Subscribe</button>
-        </div>
-    </div>
-    <footer>
-        <h2>Coffee</h2>
-        <div class="chest">
-            <p><strong>PRIVACY</strong></p>
-            <p>Terms of us</p>
-            <p>Privacy policy</p>
-            <p>3</p>
-        </div>
-        <div class="chest">
-            <p><strong>SERVICES</strong></p>
-            <p>Shop</p>
-            <p>Order Coffee</p>
-            <p>Menu</p>
-        </div>
-        <div class="chest">
-            <p><strong>ABOUT US</strong></p>
-            <p>Find a location</p>
-            <p>About us</p>
-            <p>Our story</p>
-        </div>
-        <div class="chest">
-            <p><strong>INFORMATION</strong></p>
-            <p>Plan & precing</p>
-            <p>Sell our products</p>
-            <p>Jobs</p>
-        </div>
-        <div class="chest">
-            <p><strong>SOCIALS</strong></p>
-            <div class="icon">
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            </div> 
-        </div>
-    </footer>
-    
 </body>
 <script>
     const burger = document.querySelector('.burger');
@@ -190,7 +120,7 @@
 
     burger.addEventListener('click', () => {
         burgerMenu.classList.toggle('active');
-        burger.textContent = burgerMenu.classList.contains('active') ? 'x' : '+';
+        burger.textContent = burgerMenu.classList.contains('active') ? '+' : 'x';
     });
 </script>
 </html>

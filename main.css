@@ -5,6 +5,7 @@
         body {
             background-color: #e2d9c8;
             margin: 7%;
+            overflow-x: hidden;
         }
         .head {
             display: grid;
@@ -240,7 +241,6 @@
             color: white;
         }
 
-        /* Ajout du style pour le bouton burger */
         .burger {
             display: none;
             background-color: transparent;
@@ -254,14 +254,15 @@
         }
 
         .burger-menu {
-            display: none;
+            display: block;
             position: absolute;
-            top: 60px;
-            left: 0;
+            top: 100px;
+            left: 100%;
             width: 100%;
             background-color: rgba(0, 0, 0, 0.8);
             text-align: center;
             padding: 20px 0;
+            list-style-type: none;
         }
 
         .burger-menu a {
@@ -292,8 +293,7 @@
 
             .pic {
                 grid-template-columns: 1fr 1fr 1fr 1fr;
-                width: 100%;
-                justify-content: center;
+                max-width: 100%;
             }
 
             footer {
@@ -321,10 +321,13 @@
             .burger-menu.active {
                 display: block;
                 margin-top: 6%;
+                left: 0;
+                transition: 1s;
             }
         }
 
         @media (max-width: 768px) {
+            
             body {
                 margin: 5%;
             }
@@ -380,5 +383,7 @@
 
             .burger-menu.active {
                 display: block;
+                left: 0;
+                transition: 1s;
             }
         }
