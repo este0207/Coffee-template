@@ -340,6 +340,10 @@
                 grid-template-columns: 1fr;
             }
 
+                .main #dessert {
+                        margin-top:30%;
+                }
+
             .pic {
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 max-width: 100%;
