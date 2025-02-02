@@ -251,6 +251,7 @@
             font-size: 2rem;
             cursor: pointer;
             color: rgb(255, 255, 255);
+            z-index: 1;
         }
 
         .burger-menu {
@@ -263,6 +264,7 @@
             text-align: center;
             padding: 20px 0;
             list-style-type: none;
+            transition: 1s;
         }
 
         .burger-menu a {
@@ -320,9 +322,7 @@
 
             .burger-menu.active {
                 display: block;
-                margin-top: 6%;
                 left: 0;
-                transition: 1s;
             }
         }
 
@@ -384,6 +384,5 @@
             .burger-menu.active {
                 display: block;
                 left: 0;
-                transition: 1s;
             }
         }
